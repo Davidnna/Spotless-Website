@@ -3,242 +3,393 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <!-- <link rel="icon" type="image/png" href="https://i.postimg.cc/rmrPzGvh/logo.png"> -->
+        <link rel="stylesheet" href="styles/styles.css">
         <title>Spotless Website</title>
     </head>
     <body>
-        <!-- Navbar -->
-        <nav id="navbar">
+        <!-- Header -->
+        <header id="header">
+            <!-- Logo -->
             <div class="logo">
-                <img src="Images/logo.png" alt="Spotless Logo">
+                <figure>
+                    <img src="images/logo.png" alt="Spotless Logo">
+                    <!-- <img src="https://i.postimg.cc/rmrPzGvh/logo.png" alt="Spotless Logo"> -->
+                </figure>
                 <h1>Spotless Digital Technology</h1>
             </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="signup">Signup</a></li>
-            </ul>
-        </nav>
+            <!-- Navbar -->
+            <nav>
+                <ul id="nav_list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="" class="signup">Signup</a></li>
+                </ul>
+            </nav>
+            <!-- Menu Icon -->
+            <div id="nav">
+                <div id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
 
-        <!-- Hero Section -->
-        <section id="hero-section">
-            <h1>Welcome to Spotless Digital Technologies</h1>
-            <h3>Empowering Digital Skills For<br>A Better Tomorrow</h3>
-            <p>Learn industry-relevant skills to stay ahead in the digital world. We are dedicated to equip individuals with the necessary skills needed to stay ahead in the ever changing digital world.</p>
-            <p class="you">Join us and see the future in <b>YOU</b>.</p>
-            <a href="#" class="button">Learn More</a>
-            <a href="#" class="button b2">Get Started</a>
-        </section>
+        <!-- Main -->
+        <main>
+            <!-- Hero Section -->
+            <section id="hero-section">
+                <hgroup>
+                    <h1>Welcome to<br><span>Spotless Digital Technologies</span></h1>
+                    <h3>Empowering Digital Skills For<br>A Better Tomorrow</h3>
+                </hgroup>
+                <!-- <p>Learn industry-relevant skills to stay ahead in the digital world. We are dedicated to equip individuals with the necessary skills needed to stay ahead in the ever changing digital world.</p> -->
+                <p class="you">Join us and see the future in <b>YOU</b>.</p>
+                <a href="" class="button">Learn More</a>
+                <a href="" class="button b2">Get Started</a>
+            </section>
 
-        <!-- About Section -->
-        <section id="about-section">
-            <img src="Images/hero.jpg" alt="Image of Digital Skills Training">
-            <div>
-                <p>Why Spotless</p>
-                <h1>The Future is Here<br>Let us Take You There</h1>
-                <p>At Spotless Digital Technology, we are committed to providing top-notch training in all forms of digital skills. Our mission is to empower individuals with the tools they need to excel in the ever-evolving digital landscape.</p>
+            <!-- About Section -->
+            <section id="about-section">
+                <!-- Image -->
+                <figure>
+                    <img src="images/hero.jpg" alt="Image of Digital Skills Training">
+                    <!-- <img src="https://i.postimg.cc/3NBsW4ZV/hero.jpg" alt="Image of Digital Skills Training"> -->
+                </figure>
+                <!-- Why Spotless -->
+                <article>
+                    <p>Why Spotless</p>
+                    <h1>The Future is Here<br>Let us Take You There</h1>
+                    <p>At Spotless Digital Technology, we are committed to providing top-notch training in all forms of digital skills. Our mission is to empower individuals with the tools they need to excel in the ever-evolving digital landscape.</p>
+                    <div>
+                        <a href="" class="button">Explore Courses</a>
+                        <a href="" class="button b2">Tech Up</a>
+                    </div>
+                </article>            
+            </section>
+
+            <!-- Services Section -->
+            <section id="services">
+                <p class="p">What We Are Known For</p>
+                <hgroup>
+                    <h1>Digital Skills That Can Lead to a Better Tomorrow</h1>
+                    <h2>Your Journey to the Future Begins Here.</h2>
+                </hgroup>
+                <!-- Services -->
+                <div class="services-container">
+                    <!-- AI -->
+                    <div class="tile services-tile">
+                        <div>
+                            <figure>
+                                <img src="images/ai.jpeg" alt="AI Photo"><!-- <img src="https://i.postimg.cc/mrKBGHdS/ai.jpg" alt="AI Photo"> -->
+                            </figure>
+                            <h3>Artificial Intelligence (AI) and Machine Learning</h3>
+                            <p>Develop expertise in algorithms, data processing, and model deployment.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Data Analysis -->
+                    <div class="tile services-tile">
+                        <div>
+                            <figure>
+                                <img src="images/data.jpeg" alt="Data Science Photo">
+                                <!-- <img src="https://i.postimg.cc/ZnxS3DJf/data.jpg" alt="Data Science Photo"> -->
+                            </figure>
+                            <h3>Data Analysis and Visualization</h3>
+                            <p>Master tools and techniques to interpret complex datasets and inform business decisions.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Data Engineering -->
+                    <div class="tile services-tile">
+                        <div>
+                            <figure>
+                                <img src="images/Data-Engineering.jpg" alt="Data Engineering Photo">
+                                <!-- <img src="https://i.postimg.cc/NfQYYYxZ/Data-Engineering.jpg" alt="Data Engineering Photo"> -->
+                            </figure>
+                            <h3>Data Engineering</h3>
+                            <p>Build and optimize data pipelines and infrastructure for big data applications.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Digital Marketing -->
+                    <div class="tile services-tile">
+                        <div>
+                            <figure>
+                                <img src="images/e-marketing.jpeg" alt="E-Marketing Photo">
+                                <!-- <img src="https://i.postimg.cc/520VY3T3/e-marketing.jpg" alt="E-Marketing Photo"> -->
+                            </figure>
+                            <h3>Digital Marketing</h3>
+                            <p>Explore SEO, social media strategies, and analytics to effectively promote brands online.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Graphic Design -->
+                    <div class="tile services-tile">
+                        <div>
+                            <figure>
+                                <img src="images/graphics.jpg" alt="Graphics Photo">
+                                <!-- <img src="https://i.postimg.cc/ydq4GzdQ/graphics.jpg" alt="Graphics Photo"> -->
+                            </figure>
+                            <h3>Graphic Design</h3>
+                            <p>Learn Adobe Photo shop, Illustrator, and Figma to create stunning visual designs.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- UI/UX Design -->
+                    <div class="tile services-tile">
+                        <div>
+                            <figure>
+                                <img src="images/ui-ux.jpeg" alt="UI/UX Photo">
+                                <!-- <img src="https://i.postimg.cc/k4PzcF1L/ui-ux.jpg" alt="UI/UX Photo"> -->
+                            </figure>
+                            <h3>UI/UX Design</h3>
+                            <p>Combine user interface design and user experience skills to create intuitive, aesthetically pleasing, and functional digital products.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Software Development -->
+                    <div class="tile services-tile small">
+                        <div>
+                            <figure>
+                                <img src="images/software.jpeg" alt="Software Photo">
+                                <!-- <img src="https://i.postimg.cc/pL7g9tDW/software.jpg" alt="Software Photo"> -->
+                            </figure>
+                            <h3>Software Development and Coding</h3>
+                            <p>Learn programming languages and software engineering principles to build robust applications.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Web Dev -->
+                    <div class="tile services-tile small">
+                        <div>
+                            <figure>
+                                <img src="images/web.jpeg" alt="Web Dev Photo">
+                                <!-- <img src="https://i.postimg.cc/90WS3Xjp/web.jpg" alt="Web Dev Photo"> -->
+                            </figure>
+                            <h3>Web Development</h3>
+                            <p>Master HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Robotics -->
+                    <div class="tile services-tile small">
+                        <div>
+                            <figure>
+                                <img src="images/robotics.jpeg" alt="Robotics Photo">
+                                <!-- <img src="https://i.postimg.cc/7ZbFYLJt/robotics.jpg" alt="Robotics Photo"> -->
+                            </figure>
+                            <h3>Robotics and Automation</h3>
+                            <p>Understand robotic process automation (RPA) and develop systems to streamline workflows.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Video Editing -->
+                    <div class="tile services-tile small">
+                        <div>
+                            <figure>
+                                <img src="images/video.jpeg" alt="Video Photo">
+                                <!-- <img src="https://i.postimg.cc/Hx0KPcFn/video.jpg" alt="Video Photo"> -->
+                            </figure>
+                            <h3>Video Editing</h3>
+                            <p>Learn to edit and produce engaging video content for diverse platforms and audiences.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- 3D Modelling -->
+                    <div class="tile services-tile small">
+                        <div>
+                            <figure>
+                                <img src="images/animation.jpg" alt="Animation Photo">
+                                <!-- <img src="https://i.postimg.cc/d3YFhKck/animation.jpg" alt="Animation Photo"> -->
+                            </figure>
+                            <h3>3D Modelling and Animation</h3>
+                            <p>Learn to create 3D visuals and animations for industries like gaming and advertising.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                    <!-- Cyber Security -->
+                    <div class="tile services-tile small">
+                        <div>
+                            <figure>
+                                <img src="images/cyber.jpg" alt="Cyber Photo">
+                                <!-- <img src="https://i.postimg.cc/FFym210j/cyber.jpg" alt="Cyber Photo"> -->
+                            </figure>
+                            <h3>Cyber Security</h3>
+                            <p>Acquire skills to protect networks, data, and systems from cyber threats and vulnerabilities.</p>
+                        </div>
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <button type="button" class="button shows" onclick="showSmall()">Show More</button>
+                <a href="" class="button b2" target="_blank">View More</a>
+            </section>
+
+            <!-- Testimonial Section -->
+            <section id="testimonial">
+                <p class="p">Testimonials</p>
+                <h1>What are people saying about Spotless</h1>
+                <!-- Testimonials -->
+                <div class="testimonial-container">
+                    <!-- Web Dev -->
+                    <div class="tile testimonial-tile">
+                        <p>Spotless Digital Technologies transformed my career! I landed a front-end developer job after the Web Development course.</p>
+                        <div>
+                            <figure>
+                                <img src="images/jane.jpeg" alt="Image of Jane Doe">
+                                <!-- <img src="https://i.postimg.cc/3NYMKC22/jane.jpg" alt="Image of Jane Doe"> -->
+                            </figure>
+                            <h3>Jane Doe<br>Web Development Graduate</h3>
+                        </div>
+                    </div>
+                    <!-- Digital Marketing -->
+                    <div class="tile testimonial-tile">
+                        <p>The Digital Marketing course gave me the skills to launch my online business, which is thriving now!</p>
+                        <div>
+                            <figure>
+                                <img src="images/john.jpeg" alt="Image of John Smith">
+                                <!-- <img src="https://i.postimg.cc/qBxV1Sdw/john.jpg" alt="Image of John Smith"> -->
+                            </figure>
+                            <h3>John Smith<br>Digital Marketing Graduate</h3>
+                        </div>
+                    </div>
+                    <!-- UI/UX Design -->
+                    <div class="tile testimonial-tile">
+                        <p>The UI/UX Design course taught me to create user-friendly applications. Now, I work with a global app company!</p>
+                        <div>
+                            <figure>
+                                <img src="images/emily.jpeg" alt="Image of Emily Johnson">
+                                <!-- <img src="https://i.postimg.cc/7ZWygzyy/emily.jpg" alt="Image of Emily Johnson"> -->
+                            </figure>
+                            <h3>Emily Johnson<br>UI/UX Design Graduate</h3>
+                        </div>
+                    </div>
+                    <!-- Data Analysis -->
+                    <div class="tile testimonial-tile smaller">
+                        <p>The Data Analysis course gave me the tools to excel, and I was promoted to a data analyst role.</p>
+                        <div>
+                            <figure>
+                                <img src="images/david.jpeg" alt="Image of David Wilson">
+                                <!-- <img src="https://i.postimg.cc/jdvTS9g2/david.jpg" alt="Image of David Wilson"> -->
+                            </figure>
+                            <h3>David Wilson<br>Data Analysis Graduate</h3>
+                        </div>
+                    </div>
+                    <!-- Video Editing -->
+                    <div class="tile testimonial-tile smaller">
+                        <p>The Video Editing course turned my hobby into a career. I now work as a freelance video editor.</p>
+                        <div>
+                            <figure>
+                                <img src="images/olivia.jpeg" alt="Image of Olivia Carter">
+                                <!-- <img src="https://i.postimg.cc/TY28F0d6/olivia.jpg" alt="Image of Olivia Carter"> -->
+                            </figure>
+                            <h3>Olivia Carter<br>Video Editing Graduate</h3>
+                        </div>
+                    </div>
+                    <!-- Software Development -->
+                    <div class="tile testimonial-tile smaller">
+                        <p>The Software Development course helped me transition into tech and provided the foundation I needed.</p>
+                        <div>
+                            <figure>
+                                <img src="images/chris.jpeg" alt="Image of Chris Wilson">
+                                <!-- <img src="https://i.postimg.cc/C1DYMxXp/chris.jpg" alt="Image of Chris Wilson"> -->
+                            </figure>
+                            <h3>Chris Wilson<br>Software Development Graduate</h3>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="button b2 show-smaller" onclick="showSmaller()">Show More</button>
+                <p class="p">Want to Know What our Learners Have To Say?</p>
+                <a href="" class="button">Find More</a>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq">
+                <p class="p">FAQ</p>
+                <h1>Find Answers to your questions Here</h1>
+                <!-- FAQS -->
+                <div class="faqs">
+                    <h3>Do I need prior experience to join a course?<span>&gt;</span></h3>
+                    <p>No prior experience is needed for most of our beginner courses. We also offer advanced courses for experienced professionals.</p>
+                </div>
+                <div class="faqs">
+                    <h3>Do you provide certification?<span>&gt;</span></h3>
+                    <p>Yes, upon successful completion of a course, you will receive a certificate that you can add to your resume or LinkedIn profile.</p>
+                </div>
+                <div class="faqs">
+                    <h3>Is there career support after completing a course?<span>&gt;</span></h3>
+                    <p>Yes, we offer career services such as resume reviews, interview preparation, and job placement assistance.</p>
+                </div>
+                <div class="faqs">
+                    <h3>What equipment or software do I need?<span>&gt;</span></h3>
+                    <p>You’ll need a computer and a stable internet connection. Specific software requirements will be mentioned in the course details.</p>
+                </div>
+                <p class="p">More questions?</p>
+                <a href="">View Answers</a>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
                 <div>
-                    <a href="#" class="button">Explore Courses</a>
-                    <a href="#" class="button b2">Tech Up</a>
-                </div>
-            </div>            
-        </section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <p class="p">What We Are Known For</p>
-            <h1>Digital Skills that Can Lead to a Better Tomorrow</h1>
-            <h2>Your Journey to the Future Begins Here.</h2>
-            <div class="services-container">
-                <div class="services-tile">
-                    <div>
-                        <img src="images/ai.jpeg" alt="AI Photo">
-                        <h3>Artificial Intelligence (AI) and Machine Learning</h3>
-                        <p>Develop expertise in algorithms, data processing, and model deployment.</p>
+                    <!-- Links -->
+                    <div class="logo">
+                        <figure>
+                            <img src="images/logo.png" alt="Spotless Logo">
+                            <!-- <img src="https://i.postimg.cc/rmrPzGvh/logo.png" alt="Spotless Logo"> -->
+                        </figure>
+                        <div>
+                            <h2>Links</h2>
+                            <p><a href="">About</a></p>
+                            <p><a href="">Services</a></p>
+                            <p><a href="">FAQ</a></p>
+                        </div>
                     </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
+                    <!-- Social Media -->
                     <div>
-                        <img src="images/data.jpeg" alt="Data Science Photo">
-                        <h3>Data Analysis and Visualization</h3>
-                        <p>Master tools and techniques to interpret complex datasets and inform business decisions.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
-                    <div>
-                        <img src="images/e-marketing.jpeg" alt="E-Marketing Photo">
-                        <h3>Digital Marketing</h3>
-                        <p>Explore SEO, social media strategies, and analytics to effectively promote brands online.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
-                    <div>
-                        <img src="images/graphics.jpg" alt="Graphics Photo">
-                        <h3>Graphic Design</h3>
-                        <p>Learn Adobe Photo shop, Illustrator, and Figma to create stunning visual designs.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
-                    <div>
-                        <img src="images/ui-ux.jpeg" alt="UI/UX Photo">
-                        <h3>UI/UX Design</h3>
-                        <p>Combine user interface design and user experience skills to create intuitive, aesthetically pleasing, and functional digital products.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
-                    <div>
-                        <img src="images/video.jpeg" alt="Video Photo">
-                        <h3>Video Editing</h3>
-                        <p>Learn to edit and produce engaging video content for diverse platforms and audiences.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
-                    <div>
-                        <img src="images/software.jpeg" alt="Software Photo">
-                        <h3>Software Development and Coding</h3>
-                        <p>Learn programming languages and software engineering principles to build robust applications.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile">
-                    <div>
-                        <img src="images/web.jpeg" alt="Web Dev Photo">
-                        <h3>Web Development</h3>
-                        <p>Master HTML, CSS, JavaScript, and frameworks like React, Angular, or Vue.js.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="services-tile small">
-                    <div>
-                        <img src="images/robotics.jpeg" alt="Robotics Photo">
-                        <h3>Robotics and Automation</h3>
-                        <p>Understand robotic process automation (RPA) and develop systems to streamline workflows.</p>
-                    </div>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-            <a href="#" id="profile-link" target="_blank" class="services-tile">View More</a>
-        </section>
-
-        <!-- Testimonial Section -->
-        <section id="testimonial">
-            <p class="p">Testimonials</p>
-            <h1>What are people saying about Spotless</h1>
-            <div class="testimonial-container">
-                <div class="testimonial-tile">
-                    <p>Spotless Digital Technologies transformed my career! I landed a front-end developer job after the Web Development course.</p>
-                    <div>
-                        <img src="Images/jane.jpeg" alt="Image of Jane Doe">
-                        <h3>Jane Doe<br>Web Development Graduate</h3>
+                        <a href="">
+                            <figure>
+                                <img src="images/instagram.png" alt="Instagram Logo">
+                                <!-- <img src="https://i.postimg.cc/d18PPSZq/instagram.png" alt="Instagram Logo"> -->
+                            </figure>
+                        </a>
+                        <a href="">
+                            <figure>
+                                <img src="images/facebook.jpeg" alt="Facebook Logo">
+                                <!-- <img src="https://i.postimg.cc/SKYbVKyY/facebook.jpg" alt="Facebook Logo"> -->
+                            </figure>
+                        </a>
+                        <a href="">
+                            <figure>
+                                <img src="images/x.jpeg" alt="X / Twitter Logo">
+                                <!-- <img src="https://i.postimg.cc/ZnVQJkbh/x.jpg" alt="X / Twitter Logo"> -->
+                            </figure>
+                        </a>
                     </div>
                 </div>
-                <div class="testimonial-tile">
-                    <p>The Digital Marketing course gave me the skills to launch my online business, which is thriving now!</p>
-                    <div>
-                        <img src="Images/john.jpeg" alt="Image of John Smith">
-                        <h3>John Smith<br>Digital Marketing Graduate</h3>
-                    </div>
+                <!-- Subscribe -->
+                <div class="subscribe">
+                    <h1>Subscribe</h1>
+                    <form>
+                        <label for="email">Simply Add your Email Below:</label>
+                        <input type="email" name="email" id="email" placeholder="Type Your Email Here">
+                        <button type="submit" class="button">Subscribe</button>
+                    </form>
                 </div>
-                <div class="testimonial-tile">
-                    <p>The UI/UX Design course taught me to create user-friendly applications. Now, I work with a global app company!</p>
-                    <div>
-                        <img src="Images/emily.jpeg" alt="Image of Emily Johnson">
-                        <h3>Emily Johnson<br>UI/UX Design Graduate</h3>
-                    </div>
-                </div>
-                <div class="testimonial-tile">
-                    <p>The Data Analysis course gave me the tools to excel, and I was promoted to a data analyst role.</p>
-                    <div>
-                        <img src="Images/david.jpeg" alt="Image of David Wilson">
-                        <h3>David Wilson<br>Data Analysis Graduate</h3>
-                    </div>
-                </div>
-                <div class="testimonial-tile">
-                    <p>The Video Editing course turned my hobby into a career. I now work as a freelance video editor.</p>
-                    <div>
-                        <img src="Images/olivia.jpeg" alt="Image of Olivia Carter">
-                        <h3>Olivia Carter<br>Video Editing Graduate</h3>
-                    </div>
-                </div>
-                <div class="testimonial-tile">
-                    <p>The Software Development course helped me transition into tech and provided the foundation I needed.</p>
-                    <div>
-                        <img src="Images/chris.jpeg" alt="Image of Chris Wilson">
-                        <h3>Chris Wilson<br>Software Development Graduate</h3>
-                    </div>
-                </div>
-            </div>
-            <p class="p">Want to Know What our Learners Have To Say?</p>
-            <a href="#" class="button">Find More</a>
-        </section>
-
-        <!-- FAQ Section -->
-         <section id="faq">
-            <p class="p">FAQ</p>
-            <h1>Find Answers to your questions Here</h1>
-            <div>
-                <h3>Do I need prior experience to join a course?<span>&gt;</span><span class="span">v</span></h3>
-                <p>No prior experience is needed for most of our beginner courses. We also offer advanced courses for experienced professionals.</p>
-            </div>
-            <div>
-                <h3>Do you provide certification?<span>&gt;</span><span class="span">v</span></h3>
-                <p>Yes, upon successful completion of a course, you will receive a certificate that you can add to your resume or LinkedIn profile.</p>
-            </div>
-            <div>
-                <h3>Is there career support after completing a course?<span>&gt;</span><span class="span">v</span></h3>
-                <p>Yes, we offer career services such as resume reviews, interview preparation, and job placement assistance.</p>
-            </div>
-            <div>
-                <h3>What equipment or software do I need?<span>&gt;</span><span class="span">v</span></h3>
-                <p>You’ll need a computer and a stable internet connection. Specific software requirements will be mentioned in the course details.</p>
-            </div>
-            <p class="p">More questions?</p>
-            <a href="#">View Answers</a>
-         </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div>
-                <div class="logo">
-                    <img src="Images/logo.png" alt="Spotless Logo">
-                    <div>
-                        <h2>Links</h2>
-                        <p>About</p>
-                        <p>Services</p>
-                        <p>FAQ</p>
-                    </div>
-                </div>
-                <div>
-                    <a href="#"><img src="Images/instagram.png" alt="Instagram Logo"></a>
-                    <a href="#"><img src="Images/facebook.jpeg" alt="Facebook Logo"></a>
-                    <a href="#"><img src="Images/x.jpeg" alt="X / Twitter Logo"></a>
-                </div>
-            </div>
-            <div class="subscribe">
-                <h1>Subscribe</h1>
-                <form action="">
-                    <label for="email">Simply Add your Email Below:</label>
-                    <input type="email" name="email" id="email" placeholder="Type Your Email Here">
-                    <button type="submit" class="button">Subscribe</button>
-                </form>
-            </div>
-        </section>
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer>
             <p id="p">&copy; 2025 Spotless Digital Technology. All rights reserved.</p>
             <div>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
             </div>
         </footer>
+        <script src="scripts/script.js"></script>
     </body>
 </html>

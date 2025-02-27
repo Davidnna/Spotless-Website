@@ -1,0 +1,565 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  transition: scroll 2s;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+#header {
+  background-color: #364A89;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 8vw;
+  display: flex;
+  padding: 0 1vw;
+  justify-content: space-between;
+  align-items: center;
+  border: #a54024 solid 0.1em;
+  z-index: 1000;
+}
+
+/* Logo */
+#header .logo {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  font-size: 1.5vw;
+}
+
+figure {
+  margin: 0;
+}
+
+#header .logo figure img {
+  width: 7.5vw;
+}
+
+/* Navbar */
+#header nav #nav_list {
+  display: flex;
+  gap: 2vw;
+  list-style: none;
+}
+
+#header nav #nav_list li a {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#header nav #nav_list li a:hover {
+  color: #ff9800;
+}
+
+#header nav #nav_list li a.signup {
+  background: #dd6c32;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+/* Menu Icon */
+#header #nav {
+  display: none;
+  cursor: pointer;
+  padding: 2vw;
+}
+
+#header #nav #menu-icon {
+  width: 4vw;
+  height: 3vw;
+  position: relative;
+}
+
+#header #nav #menu-icon span {
+  width: 100%;
+  height: 0.7vw;
+  background: #000;
+  position: absolute;
+}
+
+#header #nav #menu-icon span:nth-child(2) {
+  top: 50%;
+}
+
+#header #nav #menu-icon span:nth-child(3) {
+  top: 100%;
+}
+
+/* Hero Section */
+#hero-section {
+	background: url(../images/hero.png);
+	/* background: url(https://i.postimg.cc/28Z1vDtH/hero.png); */
+	background-size: cover;
+	text-align: center;
+	margin-top: 8vw;
+	padding: 3vw 0;
+  color: #fff;
+  text-shadow: 0 0 0.3em black;
+	font-size: 3vw;
+}
+
+#hero-section hgroup h1 {
+	font-size: 3.5vw;
+}
+
+#hero-section hgroup h1 span {
+  font-size: 5vw;
+  text-shadow: 0.1em 0.1em 0.4em black;
+}
+
+#hero-section .you {
+  margin-bottom: 2vw;
+}
+
+#hero-section .you b {
+  color: #dd6c32;
+}
+
+.button {
+  padding: 1vw 2vw;
+  border-radius: 0.5vw;
+  background-color: #364A89;
+  color: #fff;
+  text-shadow: none;
+}
+
+.button.b2 {
+  background-color: #fff;
+  color: #364A89;
+  border: #364A89 solid 0.1em;
+}
+
+/* About Section */
+#about-section {
+  margin: 3vw;
+  display: flex;
+}
+
+/* Image */
+#about-section figure img {
+  height: 40vw;
+}
+
+/* Why Spotless */
+#about-section article {
+  margin: 0.5vw 3vw 0 4vw;
+  font-size: 2vw;
+}
+
+#about-section article h1 {
+  font-size: 4vw;
+  margin: 2vw 0 3.1vw;
+}
+
+#about-section article div {
+  margin: 4.5vw 0 0;
+}
+
+/* Services Section */
+#services {
+  margin: 8vw 5vw 0;
+  text-align: center;
+  font-size: 3vw;
+}
+
+#services hgroup h1 {
+  margin-top: 1.5vw;
+  font-size: 5vw;
+}
+
+#services hgroup h2 {
+  font-size: 3.5vw;
+  font-weight: normal;
+  margin: 1vw 0 5vw;
+}
+
+/* Services */
+#services .services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3vw;
+}
+
+.tile {
+  background: #fff;
+  border-radius: 0.3em;
+  box-shadow: 0 0.1em 0.1em #0000001a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 2.3vw;
+}
+
+#services .services-container .services-tile div figure img {
+  width: 10vw;
+  border-radius: 50%;
+  margin: 1vw 0;
+}
+
+.tile p {
+  color: #666;
+  font-size: 2vw;
+  text-align: left;
+  padding: 2vw;
+}
+
+#services .services-container .services-tile a {
+  color: #364A89;
+  font-size: 2.5vw;
+  text-align: left;
+  margin: 2vw;
+}
+
+#services .button {
+  margin: 3vw auto 0;
+  border: none;
+  font-size: 2vw;
+  display: none;
+  cursor: pointer;
+}
+
+#services .button.b2 {
+  border-radius: 1vw;
+  box-shadow: 0 0.25em 0.3em #0000001a;
+  font-size: 2.5vw;
+  border: #364A89 solid 0.08em;
+  display: block;
+  margin: 2vw auto;
+  width: max-content;
+}
+
+/* Testimonial Section */
+#testimonial {
+  margin: 6vw 4.5vw 0;
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+#testimonial p.p {
+  font-size: 3vw;
+  margin-bottom: 2vw;
+  
+}
+
+/* Testimonials */
+#testimonial .testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(403px, 1fr));
+  gap: 2vw;
+  margin: 2vw 0;
+}
+
+#testimonial .testimonial-container .testimonial-tile div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1vw;
+  margin: 0 0 1vw 1vw;
+}
+
+#testimonial .testimonial-container .testimonial-tile div figure {
+  width: 30%;
+}
+
+#testimonial .testimonial-container .testimonial-tile div figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+#testimonial .testimonial-container .testimonial-tile div h3 {
+  padding: 1vw;
+  font-size: 1.5vw;
+}
+
+#testimonial .button.b2 {
+  display: none;
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+/* FAQ Section */
+#faq {
+  margin: 6.5vw 15vw;
+  font-size: 2.7vw;
+  text-align: center;
+}
+
+#faq p.p {
+  font-size: 3vw;
+  margin: 3vw 0 1.5vw;
+}
+
+/* FAQs */
+#faq div {
+  text-align: left;
+  padding: 5vw 0 2vw;
+  border-bottom: #666 solid 0.15vw;
+}
+
+#faq div.faqs h3 {
+  font-size: 2.5vw;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#faq div.faqs h3 span {
+  color: #666;
+}
+
+#faq div.faqs h3:hover + p, #faq div.faqs.active p {
+  display: block;
+}
+
+#faq div.faqs h3:hover span, #faq div.faqs.active h3 span {
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
+
+#faq div p {
+  display: none;
+  font-size: 2vw;
+  margin-top: 2vw;
+}
+
+#faq a {
+  font-size: 2vw;
+  padding: 1vw 2.5vw;
+  color: #364A89;
+  border: #364A89 solid 0.05em;
+  border-radius: 0.5vw;
+}
+
+/* Contact Section */
+#contact {
+	background: linear-gradient(135deg, #2d4996, #3374e6);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 10vw;
+}
+
+/* Links */
+#contact div .logo {
+  display: flex;
+  gap: 10vw;
+}
+
+#contact div .logo figure img {
+  width: 15vw;
+}
+
+#contact div .logo div h2 {
+  margin: 2vw 0 0;
+  font-size: 3vw;
+}
+
+#contact div .logo div p {
+  margin: 1vw 0 0;
+  font-size: 2vw;
+}
+
+#contact div .logo div p a {
+  color: white;
+}
+
+/* Social Media */
+#contact div .logo + div {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+}
+
+#contact div .logo + div figure img {
+  width: 4vw;
+  border-radius: 50%;
+}
+
+/* Subscribe */
+#contact .subscribe {
+  width: 50%;
+  font-size: 2.5vw;
+}
+
+#contact .subscribe h1 {
+  margin: 2vw 0 1vw;
+  font-size: 3vw;
+}
+
+#contact .subscribe form input {
+  margin: 1.5vw 0 0;
+  font-size: 2.5vw;
+  border: #222 solid 0.1vw;
+  width: 100%;
+  border-radius: 0.5vw;
+  padding:0.5vw;
+}
+
+#contact .subscribe form button {
+  border: none;
+  cursor: pointer;
+  margin: 2vw 0 0;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  display: flex;
+  padding: 2vw 10vw;
+  justify-content: space-between;
+}
+
+footer p, a {
+  font-size: 1.4vw;
+  text-decoration: none;
+  color: #ccc;
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 970px) {
+  #testimonial .testimonial-container {
+    grid-template-columns: repeat(auto-fit, 100%);
+    width: 75vw;
+    margin: 2vw auto;
+  }
+  
+  #testimonial .testimonial-container .testimonial-tile.smaller {
+    display: none;
+  }
+  
+  #testimonial .testimonial-container .testimonial-tile p {
+    font-size: 3vw;
+    text-align: center;
+  }
+  
+  #testimonial .testimonial-container .testimonial-tile div h3 {
+    font-size: 2.5vw;
+  }
+
+  #testimonial .button.b2 {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  #header .logo {
+    font-size: 2.4vw;
+  }
+
+  #header nav #nav_list {
+    display: none;
+    flex-direction: column;
+    top: 8vw;
+    left: 0;
+    position: fixed;
+    background: #2d4996;
+    padding: 6vw;
+    gap: 6vw;
+  }
+
+  #header nav #nav_list li a {
+    font-size: 3vw;
+  }
+
+  #header #nav  {
+    display: flex;
+  }
+
+  footer p, a {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 709px) {
+  #services .services-container .services-tile.small {
+    display: none;
+  }
+  
+  #services .services-container {
+    grid-template-columns: repeat(auto-fit, 100%);
+    width: 55vw;
+    margin: auto;
+  }
+
+  #services .services-container .services-tile div figure img {
+    width: 12vw;
+  }
+
+  #services .services-container .services-tile div p {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 3vw;
+  }
+
+  #services .services-container .services-tile a {
+    margin: 2vw auto;
+    font-size: 3vw;
+  }
+
+  #services .button.shows {
+    display: block;
+  }
+  
+  #faq a {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  #hero-section {
+    font-size: 4vw;
+  }
+  
+  #hero-section hgroup h1 {
+    font-size: 5vw;
+  }
+  
+  #hero-section hgroup h1 span {
+    font-size: 6.5vw;
+  }
+  
+  #hero-section .button {
+    font-size: 3vw;
+  }
+  
+  #about-section {
+    margin: 3vw 5vw;
+    flex-direction: column;
+  }
+
+  #about-section figure img {
+    height: 70vw;
+    margin-left: 5vw;
+    width: 90%;
+  }
+  
+  #about-section article {
+    margin: 3vw 5vw 0;
+    font-size: 3.5vw;
+  }
+  
+  #about-section article h1 {
+    font-size: 5vw;
+  }
+
+  #about-section article div a.button {
+    font-size: 3.5vw;
+  }
+}
